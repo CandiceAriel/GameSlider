@@ -1,0 +1,156 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+.slider__container{
+    position: relative;
+}
+
+.slider__wrapper{
+    height: 1200px;
+    width: 100%;
+    max-width: 1500px;
+    position: absolute;
+    top: 80px;
+}
+
+.bg__wrapper{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.bg__wrapper img{
+    width: 100%;
+    height: 100%;
+}
+
+.header__container{
+    position: relative;
+}
+
+.header__wrapper{
+    position: absolute;
+    z-index: 3;
+    transform: translate(-50%, 50%);
+    top: 50%;
+    left: 50%;
+}
+
+.slider-images__wrapper{
+    /* width: 80%;
+    margin: auto; */
+}
+
+.frame__wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -47%);
+    width: 100%;
+    height: 100%;
+    /* max-width: 700px; */
+    max-height: 1200px;
+    z-index: 2;
+}
+
+.frame__img{
+    width: 100%;
+}
+
+.img__wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -47%);
+}
+
+.image__wrapper img{
+    height: 100%;
+    max-width: 850px;
+  }
+  
+  .image__wrapper img:first-child {
+    z-index: 1;
+  }
+  
+  .image__wrapper img:nth-child(2) {
+    z-index: 0;
+  }
+  
+  .image__wrapper img:nth-child(3) {
+    z-index: -1;
+  }
+  
+  .image__wrapper img:nth-child(4) {
+    z-index: -2;
+  }
+
+  .slider__img{
+    width: 100%;
+    height: 100%;
+  }
+
+@media (min-width: 480px){
+    .img__wrapper{
+        width: 810px;
+        height: 1000px;
+        max-width: 900px;
+        max-height: 1200px;
+    }
+    .navigation-button__wrapper{
+        width: 120px;
+        height: 120px;
+        position: absolute;
+        top: 45%;
+        z-index: 3;
+      }
+    
+      .navigation-button__wrapper:first-child{
+        left: 0px;
+        margin-left: 10px;
+      }
+    
+      .navigation-button__wrapper:last-child{
+        right: 0px;
+        margin-right: 10px;
+      }
+    
+      .navigation-button__wrapper img{
+        width: 100%;
+        height: 100%;
+      }
+    
+    .play-button__container{
+        position: relative;
+    }
+    
+    .play-button__wrapper{
+        position: absolute;
+        width: 300px;
+        margin: auto;
+        /* top: -100%; */
+        bottom: 0;
+        left: 50%;
+        z-index: 2;
+        /* margin-top: auto; */
+        transform: translate(-50%, 93vh);
+    }
+
+    .play-button__wrapper img{
+        width: 100%;
+    }
+
+    .frame__wrapper{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -47%);
+        width: 100%;
+        height: 100%;
+        /* max-width: 700px; */
+        max-height: 1200px;
+    }
+}
