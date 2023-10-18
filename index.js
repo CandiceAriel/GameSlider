@@ -7,7 +7,9 @@ $(document).ready(function(){
   var y = win.innerHeight|| docElem.clientHeight|| body.clientHeight;
   
   $(".frame__container")[0].style.height = y-106 + "px";
-  $(".slider__container")[0].style.height = y-290 + "px";
+  $(".slider__container")[0].style.height = y-390 + "px";
+  $(".slider__container")[0].style.width = x-100 + "px";
+  $(".slider-images__container--back")[0].style.height = y-424 + "px";
   $(".slider-images__container--front")[0].style.height = y-300 + "px";
 
   // $(".slider-images__container--back")[0].style.top = "-" + y - 0.1 + "%";
