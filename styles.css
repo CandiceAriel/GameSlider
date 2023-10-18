@@ -325,7 +325,7 @@ body {
 
   .slider__container {
     left: 8%;
-    top: -20%;
+    top: 22%;
     /* margin: auto; */
     max-width: 315px;
     max-height: 460px;
@@ -337,7 +337,7 @@ body {
 
   .slider-images__container--back{
     max-height: 92%;
-    top: 9%;
+    top: 4%;
   }
 
   .slider-images__container--front {
