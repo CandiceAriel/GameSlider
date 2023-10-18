@@ -11,6 +11,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
+  min-height: -webkit-fill-available;
 }
 
 .header__wrapper,
@@ -105,11 +106,12 @@ body {
 .play-button__container {
   position: absolute;
   margin: auto;
+  z-index: 5;
 }
 
 .navigation-button__container {
   position: absolute;
-  z-index: 3;
+  z-index: 5;
   width: 100%;
   justify-content: space-between;
   display: flex;
@@ -136,7 +138,6 @@ body {
   .navigation-button__container {
     position: absolute;
     top: 44%;
-    z-index: 3;
     width: 100%;
     justify-content: space-between;
     display: flex;
@@ -154,8 +155,9 @@ body {
 
   .play-button__container {
     width: 170px;
-    bottom: 11%;
-    left: 30%;
+    bottom: 13%;
+    left: 25%;
+
   }
 
   .play-button__wrapper img {
@@ -179,9 +181,11 @@ body {
   }
 
   .slider__container {
-    top: 11%;
+    top: 9%;
     left: 9%;
-    width: 331px!important;
+    width: 277px!important;
+    height: 450px;
+    max-height: 450px;
   }
 
   .slider-images__container--back{
@@ -197,7 +201,7 @@ body {
   }
 
     .frame__wrapper{
-      transform: translate(0, -11%);
+      transform: translate(0, -10%);
     }
 }
 
@@ -205,7 +209,6 @@ body {
   .navigation-button__container {
     position: absolute;
     top: 41%;
-    z-index: 3;
     width: 100%;
     justify-content: space-between;
     display: flex;
@@ -223,7 +226,7 @@ body {
   }
 
   .play-button__container {
-    bottom: 13%;
+    bottom: 9%;
     left: 28%;
     width: 160px;
 
@@ -252,6 +255,7 @@ body {
   .slider__container {
     top:9%;
     left: 9%;
+    height: 350px;
   }
 
   .page__wrapper {
@@ -259,13 +263,13 @@ body {
   }
 
   .slider-images__container--back{
-    max-height: 98%;
-    top: 7%;
+    max-height: 90%;
+    top: 15%;
   }
 
   .slider-images__container--front {
-    max-height: 100%;
-    top: 3%;
+    max-height: 98%;
+    top: 11%;
     left: 10%;
   }
 
@@ -278,7 +282,6 @@ body {
   .navigation-button__container {
     position: absolute;
     top: 52%;
-    z-index: 3;
     width: 100%;
     justify-content: space-between;
     display: flex;
@@ -296,7 +299,7 @@ body {
   }
 
   .play-button__container {
-    bottom: 2%;
+    bottom: -4%;
     left: 28%;
     width: 160px;
 
@@ -308,7 +311,7 @@ body {
 
   .frame__container {
     margin-top: -75px;
-    max-height: 700px;
+    max-height: 500px;
   }
 
   .header__container {
@@ -324,11 +327,11 @@ body {
   }
 
   .slider__container {
-    left: 8%;
-    top: 22%;
-    /* margin: auto; */
+    left: 9%;
+    top: 26%;
+    height: 320px;
     max-width: 315px;
-    max-height: 460px;
+    max-height: 320px;
   }
 
   .page__wrapper {
