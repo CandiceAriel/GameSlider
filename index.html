@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link rel="stylesheet" href="styles.css">
     <title>Game Lv Slider</title>
 </head>
@@ -10,18 +14,19 @@
     <body>
         <div class="page__container">
             <div class="page__wrapper">
-                <div class="header__container">
-                    <div class="header__wrapper">
-                        <img src="./Assets/HEADER IMAGE Large.png" alt="header" />
-                    </div>
-                </div>
+                
                 <div class="frame__container">
+                    <div class="header__container">
+                        <div class="header__wrapper">
+                            <img src="./Assets/HEADER IMAGE Large.png" alt="header" />
+                        </div>
+                    </div>
                     <div class="frame__wrapper">
-                        <img class="frame__img" id="img-1" src="./Assets/FRAME.png" alt="Image 3"/>
+                        <img class="frame__img" id="img-1" src="./Assets/NEW FRAME.png" alt="Image 3"/>
                     </div>
                     <div class="slider__container">
                         <div class="slider__wrapper">
-                            <div class="slider-images__container">
+                            <div class=" slider-images__container slider-images__container--back">
                                 <div class="slider-images__wrapper">
                                     <div class="img__wrapper">
                                         <img class="slider__img" id="img-2" src="./Assets/21700730.jpg" alt="Image 1"/>
@@ -30,18 +35,27 @@
                                     </div>
                                 </div>
                               </div>
+                            <div class="slider-images__container slider-images__container--front">
+                                <div class="slider-images__wrapper">
+                                    <div class="img__wrapper">
+                                        <img class="slider__img--front" id="img-2" src="./Assets/21700730.jpg" alt="Image 1"/>
+                                        <img class="slider__img--front" id="img-3" src="./Assets/22339747.jpg" alt="Image 2"/>
+                                        <img class="slider__img--front" id="img-1" src="./Assets/20440625.jpg" alt="Image 3"/>
+                                    </div>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="navigation-button__container">
+                        <div class="navigation-button__wrapper" onclick="plusDivs(-1)"><img id="img-1" src="./Assets/LEFT BUTTON.png" alt="Image 1"/></div>
+                        <div class="navigation-button__wrapper" onclick="plusDivs(+1)"><img id="img-1" src="./Assets/RIGHT BUTTON.png" alt="Image 1"/></div>
+                    </div>
+                    <div class="play-button__container">
+                        <div class="play-button__wrapper">
+                          <img src="./Assets/PLAY BUTTON NEW.png" alt="Image 1"/>
                         </div>
                     </div>
                 </div>
-                <div class="navigation-button__container">
-                    <div class="navigation-button__wrapper" onclick="plusDivs(-1)"><img id="img-1" src="./Assets/LEFT BUTTON.png" alt="Image 1"/></div>
-                    <div class="navigation-button__wrapper" onclick="plusDivs(+1)"><img id="img-1" src="./Assets/RIGHT BUTTON.png" alt="Image 1"/></div>
-                </div>
-                <div class="play-button__container">
-                    <div class="play-button__wrapper">
-                      <img src="./Assets/PLAY BUTTON.png" alt="Image 1"/>
-                    </div>
-                  </div>
             </div>
         </div>
 
