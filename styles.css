@@ -325,6 +325,7 @@ body {
 
   .slider__container {
     left: 8%;
+    top: -20%;
     /* margin: auto; */
     max-width: 315px;
     max-height: 460px;
